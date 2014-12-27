@@ -1,4 +1,4 @@
-{View} = require 'space-pen'
+{View, $} = require 'space-pen'
 {strain} = require './strain'
 CoffeeFilterErrorView = require './coffeefilter-error-view.coffee'
 
@@ -19,6 +19,9 @@ class CoffeeFilterView extends View
       visible: true
 
     editor.focus()
+
+    $(@element).focusout (event) ->
+      panel.hide()
 
     atom.commands.add @element,
       'core:cancel': (event) ->
