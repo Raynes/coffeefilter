@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Strain'
+      'command': 'coffeefilter:Strain'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Coffeefilter'
+      'submenu': [
+        {
+          'label': 'Strain'
+          'command': 'coffeefilter:Strain'
+        }
+      ]
+    ]
+  }
+]
