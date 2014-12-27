@@ -1,5 +1,9 @@
-# coffeefilter package
+# Coffeefilter
 
-A short description of your package.
+Coffeefilter is an Atom plugin for compiling Coffeescript to Javascript quickly
+and showing it to you.
 
-![A screenshot of your spankin' package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+![Screenshot](https://dl.dropboxusercontent.com/s/sqsgjidwb9i6qgw/2014-12-26%20at%207.58%20PM%202x.png?dl=0)
+
+This project simply exports a `Strain` command. Run it on a region or if you
+don't have any selected text, an entire file.
