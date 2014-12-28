@@ -20,8 +20,9 @@ class CoffeeFilterView extends View
 
     editor.focus()
 
-    $(@element).focusout (event) ->
-      panel.hide()
+    $(atom.views.getView(panel)).focusout (event) ->
+      if $('#coffeefilter:hover').length is 0
+        panel.hide()
 
     atom.commands.add @element,
       'core:cancel': (event) ->
