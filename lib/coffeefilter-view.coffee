@@ -1,4 +1,4 @@
-{View, $} = require 'space-pen'
+{View, $} = require 'atom-space-pen-views'
 {strain} = require './strain'
 CoffeeFilterErrorView = require './coffeefilter-error-view.coffee'
 

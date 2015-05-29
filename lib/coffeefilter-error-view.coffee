@@ -1,4 +1,4 @@
-{View} = require 'space-pen'
+{$, View} = require 'atom-space-pen-views'
 
 module.exports =
 class CoffeeFilterErrorView extends View
@@ -13,5 +13,5 @@ class CoffeeFilterErrorView extends View
 
   initialize: ->
     @messagePanel.on 'click', @detach
-    atom.views.getView(atom.workspace).append(this)
+    $(atom.views.getView(atom.workspace)).append(this)
     setTimeout (=> @detach()), 10000
