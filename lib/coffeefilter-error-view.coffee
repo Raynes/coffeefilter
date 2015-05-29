@@ -13,5 +13,5 @@ class CoffeeFilterErrorView extends View
 
   initialize: ->
     @messagePanel.on 'click', @detach
-    atom.workspaceView.append(this)
+    atom.views.getView(atom.workspace).append(this)
     setTimeout (=> @detach()), 10000
